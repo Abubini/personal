@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <title>ABOUT</title>
+</head>
+<body>
+    <header>                
+        <div class="logo">
+            <h1>Biniyam</h1>
+            <h1 id="girma">Girma</h1>
+        </div>
+        <div class="navs">
+            <a href="index.html" class="nav">Home</a>
+            <a href="cv.html" class="nav">Cv</a>
+            <a href="project.html" class="nav">Project</a>
+        </div>
+        <div class="nav-container">
+            <button class="open-btn" onclick="openNav()">☰</button>
+             <nav id="mySidebar" class="sidebar">
+                     <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">×</a>
+                     <a href="index.html" class="nav">Home</a>
+                     <a href="cv.html" class="nav">Cv</a>
+                     <a href="project.html" class="nav">Project</a>
+                    
+                 </nav>
+                 </div>
+    </header>
+
+    <main>
+
+        <section id="aboutMe" class="container">
+            <h1 class="heading"> About me</h1>
+            <div class="aboutMeContainer">
+                <img src="/images/me.jpg" alt="my picture" class="me">
+                <div class="aboutMeDetails">
+                    <div class="eachDetails">
+                        <p class="metaData">name</p>
+                        <p class="data">Biniyam Girma</p>
+                    </div>
+                    <div class="eachDetails">
+                        <p class="metaData">adress</p>
+                        <p class="data">1590 Mamo Sefer, Addis Ababa</p>
+                    </div>
+                    <div class="eachDetails">
+                        <p class="metaData">school</p>
+                        <p class="data">AAiT</p>                        
+                    </div>
+                    <div class="eachDetails">
+                        <p class="metaData">phone</p>
+                        <a href="tel:+251902392691" class="data">0902392691</a>
+                    </div>
+                    <div class="eachDetails">
+                        <p class="metaData">year</p>
+                        <p class="data">Third</p>
+                    </div>
+                    <div class="eachDetails">
+                        <p class="metaData">email</p>
+                        <a href="mailto:bini.bg.bg@.com" class="data">bini.bg.bg@gmail.com</a>
+                    </div>
+                    <div class="eachDetails">
+                        <p class="metaData">birthdate</p>
+                        <p class="data">aug-5-2003</p>
+                    </div>
+                    <div class="eachDetails">
+                        <p class="metaData">github</p>
+                        <a href="https://github.com/dashboard" class="data" target="_blank">Abubini</a>
+                    </div>
+                    <div class="eachDetails">
+                        <p class="metaData">nationality</p>
+                        <p class="data">Ethiopian</p>
+                    </div>
+                    <div class="eachDetails">
+                        <p class="metaData">linkedin</p>
+                        <a href="linkedin.com/in/bini-girma-075069224" class="data" target="_blank">Bini Girma</a>
+                    </div>
+                    
+                    <a class="eachDetails"id="showCv" href="cv.html">show cv</a>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="contact" class="container">
+            <h1 class="heading">Get in touch</h1>
+            <div class="contactContainer">
+                <div class="contactForm">
+                    <form action="" class="contactForm">
+                    <div class="shortInputs">
+                        <div class="shortInput">
+                            <label for="fName" class="lable">first name</label>
+                            <input type="text" id="fName" class="input">
+                        </div>
+                        <div class="shortInput">
+                            <label for="lName" class="lable">last name</label>
+                            <input type="text" id="lName" class="input">
+                        </div>
+                    
+                        <div class="shortInput">
+                            <label for="email" class="lable">email</label>
+                            <input type="email" id="email" class="input">
+                        </div>
+                        <div class="shortInput">
+                            <label for="phone" class="lable">phone number</label>
+                            <input type="text" id="phone" class="input">
+                        </div>
+                    </div>
+                    <label for="text" class="lable">your message</label>
+                    <textarea name="text" id="text" class="text" ></textarea>
+                    <button class="send" type="submit">send</button>
+                </div>
+            </form>
+                <div class="socialLinks">
+                    <div class="links">
+                    <label for="telegram" class="linkLabel">telegram</label>
+                    <a href="#" class="link" id="telegram" target="_blank">@abubini</a>
+                    </div>
+                    <div class="links">
+                        <label for="instagram" class="linkLabel">instagram</label>
+                        <a href="#" class="link" id="instagram" target="_blank">instagram</a>
+                        </div>
+                        <div class="links">
+                            <label for="twitter" class="linkLabel">twitter</label>
+                            <a href="#" class="link" id="twitter" target="_blank">twitter</a>
+                            </div>
+                            <div class="links">
+                                <label for="linkedin" class="linkLabel">linkedin</label>
+                                <a href="linkedin.com/in/bini-girma-075069224" class="link" id="linkedin" target="_blank">Bini Girma</a>
+                                </div>
+                                <div class="links">
+                                    <label for="github" class="linkLabel">github</label>
+                                    <a href="https://github.com/dashboard" class="link" id="github" target="_blank">Abubini</a>
+                                    </div>
+                                    <div class="links">
+                                        <label for="email" class="linkLabel">email</label>
+                                        <a href="mailto:bini.bg.bg@gmail.com" class="link" id="email">bini.bg.bg@gmail.com</a>
+                                        </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="container">
+            <h1 class="heading">skills</h1>
+            <div class="skillsContainer">
+                <div class="hardSkills">
+                    <h2 class="skillType" id="skillType">hardskill</h2>
+                    <div class="hardSkill">
+                        <img src="/images/python.png" alt="skill" class="skillImage">
+                        <div class="skillDetail">
+                            <h3 class="hardSkillName">Python</h3>
+                            <div class="progressContainer">
+                                <div class="progress" id="python"></div>
+                                <div class="percent">%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hardSkill">
+                        <img src="/images/html.png" alt="skill" class="skillImage">
+                        <div class="skillDetail">
+                            <h3 class="hardSkillName">html</h3>
+                            <div class="progressContainer">
+                                <div class="progress" id="html"></div>
+                                <div class="percent">%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hardSkill">
+                        <img src="/images/css.png" alt="skill" class="skillImage">
+                        <div class="skillDetail">
+                            <h3 class="hardSkillName">css</h3>
+                            <div class="progressContainer">
+                                <div class="progress" id="css"></div>
+                                <div class="percent">%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hardSkill">
+                        <img src="/images/js.png" alt="skill" class="skillImage">
+                        <div class="skillDetail">
+                            <h3 class="hardSkillName">javascript</h3>
+                            <div class="progressContainer">
+                                <div class="progress" id="js"></div>
+                                <div class="percent">%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hardSkill">
+                        <img src="/images/java.png" alt="skill" class="skillImage">
+                        <div class="skillDetail">
+                            <h3 class="hardSkillName">java</h3>
+                            <div class="progressContainer">
+                                <div class="progress" id="java"></div>
+                                <div class="percent">%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hardSkill">
+                        <img src="/images/mysql.png" alt="skill" class="skillImage">
+                        <div class="skillDetail">
+                            <h3 class="hardSkillName">mysql</h3>
+                            <div class="progressContainer">
+                                <div class="progress" id="mysql"></div>
+                                <div class="percent">%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="softSkills">
+                    <h2 class="skillType">soft skills</h2>
+                    <div class="softSkill">
+                        <h3 class="softSkillName">Communication</h3>
+                        <p class="description">I excel at articulating ideas clearly and effectively, both verbally and in writing. I adapt my messages to suit different audiences and actively listen to ensure mutual understanding. I confidently present information in meetings, create organized documentation and reports, and engage empathetically with others to foster productive conversations and feedback.</p>
+                    </div>
+                    <div class="softSkill">
+                        <h3 class="softSkillName">Teamwork</h3>
+                        <p class="description">I thrive in collaborative environments, working well with colleagues to achieve shared goals and contribute ideas. I support a positive team dynamic and handle conflicts professionally, seeking constructive solutions and aligning my objectives with those of the team to drive collective success.
+
+                        </p>
+                    </div>
+                    <div class="softSkill">
+                        <h3 class="softSkillName">Problem_Solving</h3>
+                        <p class="description">I have a strong ability to analyze complex issues by breaking them down into manageable components and identifying root causes. I approach problem-solving creatively, developing innovative solutions and making informed decisions based on data and logical reasoning.</p>
+                    </div>
+                    <div class="softSkill">
+                        <h3 class="softSkillName">Adaptability</h3>
+                        <p class="description">I am highly adaptable, embracing changes in projects, priorities, or technologies with ease. I stay flexible in the face of new challenges, continuously update my skills and knowledge to keep up with industry trends, and maintain resilience under pressure to ensure effective performance.</p>
+                    </div>
+                    <div class="softSkill">
+                        <h3 class="softSkillName">Critical_Thinking</h3>
+                        <p class="description"> I apply critical thinking to evaluate information and arguments logically, leading to well-informed decisions. I break down complex problems into simpler parts, rely on evidence to support conclusions, and assess various perspectives to ensure sound judgments and effective solutions.</p>
+                    </div>
+                    <div class="softSkill">
+                        <h3 class="softSkillName">Time_Management</h3>
+                        <p class="description">I manage my time effectively by prioritizing tasks and balancing multiple projects while meeting deadlines. I plan and organize work schedules efficiently, use tools to track progress, and focus on important activities to maximize productivity and minimize distractions.</p>
+                    </div>
+                    <div class="softSkill">
+                        <h3 class="softSkillName">Continuous_Learning</h3>
+                        <p class="description">I am committed to continuous learning, staying informed about industry trends and new technologies. I actively seek additional training and certifications, adapt to new tools and practices, and embrace challenges to expand my knowledge and expertise.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p class="footer">&copy <span id="year"></span> <a href="index.html">Biniyam Girma</a>. All rights reserved.</p>
+    </footer>
+    
+
+
+
+
+    <script>
+        function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+    }
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

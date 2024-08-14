@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>HOME</title>
+</head>
+<body>
+    <header>                
+        <div class="logo">
+            <h1>Biniyam</h1>
+            <h1 id="girma">Girma</h1>
+        </div>
+        <div class="navs">
+            <a href="about.html" class="nav">About</a>
+            <a href="cv.html" class="nav">Cv</a>
+            <a href="project.html" class="nav">Project</a>
+        </div>
+        <div class="nav-container">
+            <button class="open-btn" onclick="openNav()">☰</button>
+            <nav id="mySidebar" class="sidebar">
+                    <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">×</a>
+                    <a href="about.html" class="nav">About</a>
+                    <a href="cv.html" class="nav">Cv</a>
+                    <a href="project.html" class="nav">Project</a>
+                    
+                </nav>
+                </div>
+    </header>
+
+<main>
+    <div class="video-container">
+        <video autoplay muted loop  >
+            <source src="/images/background.webm" type="video/mp4">
+
+            Your browser does not support the video tag.
+        </video>
+        </div>
+    <div class="container">
+        <img src="/images/me.jpg" alt="my picture" class="image">
+
+        <div class="bio">
+            <h2 class="name">Hello! I’m Biniyam Girma, </h2>
+            <p class="description">a passionate software engineering student with a focus on creating efficient and innovative solutions. My journey in software engineering has been driven by curiosity and a deep love for technology. I’m always eager to learn new things and take on challenging projects. Welcome to my personal space where I showcase my projects, skills, and more. Here, you'll find some of the work I'm most proud of.</p>
+            <div class="buttons">
+                <a href="project.html">projects</a>
+                <a href="about.html#contact">hire me</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p class="footer">&copy <span id="year"></span> <a href="index.html">Biniyam Girma</a>. All rights reserved.</p>
+</footer>
+
+
+
+<script>
+
+
+function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+    }
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+
+    
+    const image = document.querySelector('.image');
+
+image.addEventListener('mousemove', (event) => {
+    const rect = image.getBoundingClientRect();
+    const x = event.clientX - rect.left; // Get mouse X position relative to the image
+    const y = event.clientY - rect.top;  // Get mouse Y position relative to the image
+
+    const offsetX = (x / rect.width) - 0.5; // Calculate offset from the center
+    const offsetY = (y / rect.height) - 0.5; // Calculate offset from the center
+
+    const rotateY = offsetX * 50; // 30 degrees max rotation on Y-axis
+    const rotateX = -offsetY * 50; // 30 degrees max rotation on X-axis
+
+    image.style.transform = `rotateY(${rotateY}deg) rotateX(${rotateX}deg)`;
+});
+
+image.addEventListener('mouseleave', () => {
+    image.style.transform = 'rotateY(0) rotateX(0)'; // Reset rotation on mouse leave
+});
+</script>
+
+</body>
+</html>
